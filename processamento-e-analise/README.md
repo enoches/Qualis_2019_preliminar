@@ -1,4 +1,4 @@
-# Processing and Analysis
+# Processamento e análise
 
 This folder contains three sub-folders: `importable-data`, 
 `command-files`, and `analysis-data`.
