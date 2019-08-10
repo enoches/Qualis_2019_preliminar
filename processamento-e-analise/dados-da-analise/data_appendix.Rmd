@@ -1,7 +1,7 @@
 ---
 title: "Data Appendix - Codebook "
 author: "Enoch Filho"
-date: "09 de agosto de 2019"
+date: "10 de agosto de 2019"
 output: html_document
 --- 
 
@@ -18,7 +18,8 @@ O banco possui 22046 observações.
 - ESTRATO_2019: Possui 9 + 1 categorias: A1 até A4, B1 até B4, C e NP (Não Pontuou)
 
 
-## Banco de dados com o Qualis 2016 da Área de Economia: `qualis_eco_2016.rds` 
+
+## Banco de dados com o Qualis 2016 da Área de Economia: `qualis_economia_2016.rds` 
 
 O banco possui 1626 observações.
 
@@ -26,3 +27,16 @@ O banco possui 1626 observações.
 - ISSN_2016: 
 - TITULO_2016: 
 - ESTRATO_2016: Possui 8 categorias: A1, A2, B1 até B5 e C
+
+
+
+## Banco de dados com o Qualis 2019 da Área de Economia: `qualis_economia_2019.rds` 
+
+O banco possui 1626 observações.
+
+### Variáveis:
+- ISSN_2016: 
+- TITULO_2016: 
+- TITULO_2019: 
+- ESTRATO_2016: Possui 8 categorias: A1, A2, B1 até B5 e C
+- ESTRATO_2019: Possui 9 + 1 categorias: A1 até A4, B1 até B4, C e NP (Não Pontuou)
