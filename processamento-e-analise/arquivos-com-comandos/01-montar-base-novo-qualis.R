@@ -9,6 +9,7 @@ library(here)
 library(readr)
 library(dplyr)
 library(stringr)
+library(forcats) # as_factor()
 library(purrr) # usei apenas o as_vector()
 
 # Importa os dados: ----
@@ -82,7 +83,7 @@ novo_qualis_preliminar <-
 
 novo_qualis_preliminar <- novo_qualis_preliminar %>% 
   arrange(ESTRATO_2019) %>% 
-  mutate(ESTRATO_2019 = as_factor(ESTRATO_2019)) %>% 
+  mutate(ESTRATO_2019 = forcats::as_factor(ESTRATO_2019)) %>% 
   arrange(TITULO_2019)
 
 

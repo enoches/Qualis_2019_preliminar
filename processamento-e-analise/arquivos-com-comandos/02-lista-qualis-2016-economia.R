@@ -29,7 +29,7 @@ qualis_eco_2016 <- qualis_eco_2016 %>%
 
 qualis_eco_2016 <- qualis_eco_2016 %>% 
   arrange(ESTRATO_2016) %>% 
-  mutate(ESTRATO_2016 = as_factor(ESTRATO_2016)) %>% 
+  mutate(ESTRATO_2016 = forcats::as_factor(ESTRATO_2016)) %>% 
   arrange(TITULO_2016)
 
 # Salva em `dados-da-analise/`: ----
