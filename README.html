@@ -369,23 +369,26 @@ summary {
 <div id="qualis-2019---preliminar" class="section level1">
 <h1>Qualis 2019 - preliminar</h1>
 <p>Disponibilizo uma <strong>tabela em Excel com os periódicos da área de economia</strong> e as respectivas classificações do provável novo Qualis 2019 juntamente com a classificação ainda vigente (período 2013-2016). A planilha foi criada a partir de <a href="https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis">um arquivo pdf que circulou pelas redes sociais</a> em meados de julho de 2019.</p>
-<div id="o-arquivo-no-formato-.xlsx-pode-ser-baixado-diretamente-neste-link" class="section level2">
-<h2>O arquivo no formato <code>.xlsx</code> pode ser baixado diretamente neste link:</h2>
+<p>O arquivo no formato <code>.xlsx</code> pode ser baixado diretamente neste link: </p>
 <ul>
+<li><a href="https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_economia_2019.xlsx"><strong>qualis_economia_2019.xlsx</strong></a> </li>
 <li>Versão: 0.1.1</li>
 <li>Atualizada em: 2019-ago-10</li>
 </ul>
-<p>Esta pasta contém as informações e procedimentos necessários para criar a planilha Novo Qualis 2019 para a área de Economia. Com vistas à reprodutibilidade do resultado, a trabalho seguiu as diretrizes do <a href="https://www.projecttier.org/">TIER Protocol</a> e mais especificamente o <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
-<p>Este projeto foi iniciado por <a href="http://www.enochfilho.net/">Enoch Filho</a> como um exercício para praticar o <code>R</code>, o <code>Git</code>, o <code>GitHub</code>, o <code>TIER Protocol</code>. O status é <em>work-in-progress</em> e fica aberto à colaboração, seja via <a href="https://github.com/enoches/Qualis_2019_preliminar/issues">issues</a>, seja submetendo <code>pull requests</code>. Uma versão da planilha já está disponível, mas espera-se que haja melhorias, mudanças no código, documentação, etc.</p>
+<p>Esta pasta contém as informações e procedimentos necessários para recriar a planilha <em>Qualis Economia 2019</em>. Com vistas à reprodutibilidade do resultado, o trabalho procurou seguir as recomendações do <a href="https://www.projecttier.org/">Project TIER Protocol</a> e mais especificamente o <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
+<p>Este projeto foi iniciado por <a href="http://www.enochfilho.net/">Enoch Filho</a> como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do <code>R</code>, o <code>Git</code>, o <code>GitHub</code>, o <code>TIER Protocol</code>.</p>
+<p>O status é <em>work-in-progress</em>. Uma versão da planilha já está disponível. Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. A comunidade é bem-vinda para revisar e aperfeiçoar o código e reutilizar o material.</p>
+<p>Aguardo <a href="https://github.com/enoches/Qualis_2019_preliminar/issues">issues</a> e <code>pull requests</code>.</p>
+<p>Disclaimer: nessa versão da planilha (0.1.1) os dados foram pareados pelo ISSN. Várias revistas aparentemente tiveram seus ISSN alterados, então na próxima versão da planilha será preciso fazer também a junção pelos nomes das revistas, e assim tentar identificar os periódicos que faltam.</p>
 <div id="software-utilizado" class="section level3">
 <h3>Software utilizado</h3>
 <p>O software utilizado foi o R versão 3.6.0 e o RStudio 1.2.1335</p>
-</div>
 </div>
 <div id="pastas-e-arquivos" class="section level2">
 <h2>1. Pastas e arquivos</h2>
 <ul>
 <li>O arquivo <code>README.md</code> com informações gerais (este arquivo).</li>
+<li>Arquivo Qualis Economia 2019 - <code>qualis_economia_2019.xlsx</code></li>
 <li>Dados Originais e Metadados - <code>dados-originais</code>
 <ul>
 <li>Metadados - <code>metadados</code>
@@ -416,10 +419,11 @@ summary {
 1981-030X      19&amp;20 (RIO DE JANEIRO)                                                 B1 
 </code></pre>
 </div>
-<div id="instrucoes-para-replicar-o-estudo" class="section level2">
-<h2>3. Instruções para replicar o estudo</h2>
+<div id="instrucoes-para-replicacao" class="section level2">
+<h2>3. Instruções para replicação</h2>
 <p>Basta rodar os scripts da pasta <code>processamento-e-analise/arquivos-com-comandos/</code></p>
 <p>Lorem ipsum lorem ipsum…</p>
+<p>.</p>
 </div>
 </div>
 
