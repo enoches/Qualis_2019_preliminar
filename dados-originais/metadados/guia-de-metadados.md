@@ -1,5 +1,8 @@
 # Guia de Metadados do "Qualis 2019 - preliminar"
 
+
+Informações sobre os arquivos com os dados originais/ dados brutos.
+
 ## Arquivo: `Qualis novos 1907.pdf`
 - Arquivo pdf com 3,8 MB de tamanho, contendo 441 páginas. 
 O arquivo circulou pelas redes sociais em meados de julho de 2019 e parece se tratar do Qualis-Referência. 

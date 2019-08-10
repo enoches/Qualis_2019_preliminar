@@ -368,27 +368,18 @@ summary {
 
 <div id="qualis-2019---preliminar" class="section level1">
 <h1>Qualis 2019 - preliminar</h1>
-<p>Disponibilizamos uma tabela com a classificação dos periódicos da área de economia referentes ao Novo Qualis 2019 da CAPES. A planilha foi criada a partir de <a href="https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis">um arquivo pdf que circulou pelas redes sociais</a> em meados de julho de 2019.</p>
-<p>Esta pasta contém as informações e procedimentos necessários para criar a planilha e o relatório com o Novo Qualis 2019 para a Área de Economia. Com vistas à reprodutibilidade dos resultados, a análise seguiu as diretrizes do <a href="https://www.projecttier.org/">TIER Protocol</a> e mais especificamente o The <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
-<div id="info" class="section level2">
-<h2>Info</h2>
-<p>Peguei a lista de revistas da área da última avaliação disponível (2013-2016) no site, relacionei e filtrei com essa nova lista que saiu semana passada (2019), utilizando o ISSN como identificador. A tabela resultante tem 1547 entradas.</p>
-<p>Um total de 492 revistas não foram encontradas no novo estrato, enquanto outras 30 foram identificadas mas não pontuaram (NP). Essa tabela derivada não inclui os períódicos que provavelmente foram (serão?) incluídos na avaliação de 2019 não configuravam na lista de 2016.</p>
+<p>Disponibilizo uma <strong>tabela em Excel com os periódicos da área de economia</strong> e as respectivas classificações do provável novo Qualis 2019 juntamente com a classificação ainda vigente (período 2013-2016). A planilha foi criada a partir de <a href="https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis">um arquivo pdf que circulou pelas redes sociais</a> em meados de julho de 2019.</p>
+<p>O arquivo no formato <code>.xlsx</code> pode ser baixado diretamente neste link:</p>
+<p>Esta pasta contém as informações e procedimentos necessários para criar a planilha Novo Qualis 2019 para a área de Economia. Com vistas à reprodutibilidade do resultado, a trabalho seguiu as diretrizes do <a href="https://www.projecttier.org/">TIER Protocol</a> e mais especificamente o <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
+<p>Este projeto foi iniciado por <a href="http://www.enochfilho.net/">Enoch Filho</a> como um exercício para praticar o <code>R</code>, o <code>Git</code>, o <code>GitHub</code>, o <code>TIER Protocol</code>. O status é <em>work-in-progress</em> e fica aberto à colaboração, seja via <a href="https://github.com/enoches/Qualis_2019_preliminar/issues">issues</a>, seja submetendo <code>pull requests</code>. Uma versão da planilha já está disponível, mas espera-se que haja mudanças no código, melhorias na documentação, etc.</p>
 <div id="software-utilizado" class="section level3">
 <h3>Software utilizado</h3>
 <p>O software utilizado foi o R versão 3.6.0 e o RStudio 1.2.1335</p>
 </div>
-</div>
 <div id="pastas-e-arquivos" class="section level2">
 <h2>1. Pastas e arquivos</h2>
-<p>Este repositório contém as seguintes pastas e arquivos:</p>
 <ul>
-<li>An electronic copy of your complete final paper. Often, this means:
-<ul>
-<li>An <code>.Rmd</code> file with all the text and code to produce the final paper</li>
-<li>A knitted HTML or PDF file of the complete paper</li>
-</ul></li>
-<li>The <code>README.md</code> file for your repository</li>
+<li>O arquivo <code>README.md</code> com informações gerais (este arquivo).</li>
 <li>Dados Originais e Metadados - <code>dados-originais</code>
 <ul>
 <li>Metadados - <code>metadados</code>
@@ -407,17 +398,21 @@ summary {
 </div>
 <div id="modificacoes-nos-arquivos-para-importacao" class="section level2">
 <h2>2. Modificações nos arquivos para importação</h2>
-<p>Nesta seção descrevo as modificações feitas nos arquivos da pasta <code>dados-a-importar/</code>, criados a partir dos dados originais (pasta <code>dados-originais/</code>).</p>
-<p>O arquivo <code>Qualis-novos-1907_drv.txt</code> foi derivado do arquivo <code>Qualis novos 1907.pdf</code>. Abri o arquivo original, em pdf, em um leitor de pdf e utilizei a opção “Salvar Como” txt (texto puro). O arquivo resultante apresenta vários traços para indicar cada página, da seguinte forma:  <code>----------------------- Page 1-----------------------</code></p>
+<p>O arquivo <code>Qualis-novos-1907_drv.txt</code> está na pasta <code>dados-a-importar/</code> e foi derivado do arquivo original <code>Qualis novos 1907.pdf</code> e que contém a novo Qualis 2019. Abri o arquivo original, em pdf, em um leitor de pdf e utilizei a opção “Salvar Como” txt (texto puro). O arquivo resultante se apresenta da seguinte forma: </p>
+<pre><code>----------------------- Page 1-----------------------
+
+   ISSN                                     TITULO                                   ESTRATO 
+
+  2237-5953    (RE) PENSANDO DIREITO                                                  B4 
+
+  2469-4312    [IN] TRANSITION                                                    B2 
+
+1981-030X      19&amp;20 (RIO DE JANEIRO)                                                     B1 
+</code></pre>
 </div>
 <div id="instrucoes-para-replicar-o-estudo" class="section level2">
 <h2>3. Instruções para replicar o estudo</h2>
 <p>Lorem ipsum lorem ipsum…</p>
-</div>
-<div id="informacoes" class="section level2">
-<h2>Informações:</h2>
-<p>Enoch Sousa Filho </p>
-<p>www.enochfilho.net</p>
 </div>
 </div>
 

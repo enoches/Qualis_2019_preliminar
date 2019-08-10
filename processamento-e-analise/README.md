@@ -1,7 +1,4 @@
 # Processamento e análise
 
-This folder contains three sub-folders: `importable-data`, 
-`command-files`, and `analysis-data`.
-
-Contents of these folders are described in `README` files in those 
-folders.
+Esta pasta tem três sub-pastas: `dados-a-importar`, 
+`arquivos-com-comandos`, and `dados-da-analise`.

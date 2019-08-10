@@ -1,6 +1,28 @@
 ---
-title: "Data Appendix"
-author: "name of author"
-date: "date created or edited"
+title: "Data Appendix - Codebook "
+author: "Enoch Filho"
+date: "09 de agosto de 2019"
 output: html_document
----
+--- 
+
+# Data appendix/ Apêndice dos dados/ Codebook
+
+
+## Banco de dados com o novo Qualis 2019 preliminar: `novo_qualis_preliminar.rds`
+
+O banco possui 22046 observações.
+
+### Variáveis:
+- ISSN_2019: 
+- TITULO_2019: 
+- ESTRATO_2019: Possui 9 + 1 categorias: A1 até A4, B1 até B4, C e NP (Não Pontuou)
+
+
+## Banco de dados com o Qualis 2016 da Área de Economia: `qualis_eco_2016.rds` 
+
+O banco possui 1626 observações.
+
+### Variáveis:
+- ISSN_2016: 
+- TITULO_2016: 
+- ESTRATO_2016: Possui 8 categorias: A1, A2, B1 até B5 e C
