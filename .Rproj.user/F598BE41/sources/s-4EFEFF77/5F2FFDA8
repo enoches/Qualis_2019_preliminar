@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1565546678686.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5F2FFDA8",
+    "lastKnownWriteTime" : 1565469538,
+    "last_content_update" : 1565548137045,
+    "path" : "C:/Users/Enoch/WorkspaceGit/Qualis_2019_preliminar/processamento-e-analise/arquivos-com-comandos/03-processa-novo-qualis-economia.R",
+    "project_path" : "processamento-e-analise/arquivos-com-comandos/03-processa-novo-qualis-economia.R",
+    "properties" : {
+        "cursorPosition" : "31,0",
+        "scrollLine" : "21",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

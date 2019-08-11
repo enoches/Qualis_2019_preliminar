@@ -368,17 +368,17 @@ summary {
 
 <div id="qualis-2019---preliminar" class="section level1">
 <h1>Qualis 2019 - preliminar</h1>
-<p>Disponibilizo uma <strong>tabela em Excel com os periódicos da área de economia</strong> e as respectivas classificações do provável novo Qualis 2019 juntamente com a classificação ainda vigente (período 2013-2016). A planilha foi criada a partir de <a href="https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis">um arquivo pdf que circulou pelas redes sociais</a> em meados de julho de 2019.</p>
-<p>O arquivo no formato <code>.xlsx</code> pode ser baixado diretamente neste link: </p>
+<p>Disponibilizo uma <strong>tabela em Excel com periódicos da área de economia</strong> e as respectivas classificações Qualis 2016 e o provável <strong>novo Qualis 2019</strong>. A planilha foi criada a partir de <a href="https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis">um arquivo pdf que circulou pelas redes sociais</a> em meados de julho de 2019.</p>
+<p>Este repositório (atalho: <a href="http://bit.ly/novoqualis" class="uri">http://bit.ly/novoqualis</a>) traz as informações e procedimentos para recriar a planilha <em>Qualis Economia 2019</em>. Com vistas à reprodutibilidade, o trabalho procurou seguir as recomendações do <a href="https://www.projecttier.org/">Project TIER</a> e mais especificamente o <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
+<p>O projeto foi iniciado por <a href="http://www.enochfilho.net/">Enoch Filho</a> como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do <code>R</code>, o <code>Git</code>, o <code>GitHub</code>, o <code>TIER Protocol</code>. O status é <em>work-in-progress</em>. Uma versão da planilha já está disponível. Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. A comunidade é bem-vinda para revisar e aperfeiçoar o código (por meio de <a href="https://github.com/enoches/Qualis_2019_preliminar/issues">issues</a> e <code>pull requests</code> ) e livre para reutilizar o material.</p>
+<p>O arquivo no formato <code>.xlsx</code> pode ser baixado diretamente neste link:</p>
 <ul>
-<li><a href="https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_economia_2019.xlsx"><strong>qualis_economia_2019.xlsx</strong></a> </li>
+<li><a href="https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_economia_2019.xlsx"><strong>qualis_economia_2019.xlsx</strong></a>
+<ul>
 <li>Versão: 0.1.1</li>
-<li>Atualizada em: 2019-ago-10</li>
+<li>Atualizada em (yyyy-mm-dd): 2019-08-10</li>
+</ul></li>
 </ul>
-<p>Esta pasta contém as informações e procedimentos necessários para recriar a planilha <em>Qualis Economia 2019</em>. Com vistas à reprodutibilidade do resultado, o trabalho procurou seguir as recomendações do <a href="https://www.projecttier.org/">Project TIER Protocol</a> e mais especificamente o <a href="https://github.com/ProjectTIER/ProjectTIER_R">TIER Documentation Protocol v3.0 for R</a>.</p>
-<p>Este projeto foi iniciado por <a href="http://www.enochfilho.net/">Enoch Filho</a> como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do <code>R</code>, o <code>Git</code>, o <code>GitHub</code>, o <code>TIER Protocol</code>.</p>
-<p>O status é <em>work-in-progress</em>. Uma versão da planilha já está disponível. Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. A comunidade é bem-vinda para revisar e aperfeiçoar o código e reutilizar o material.</p>
-<p>Aguardo <a href="https://github.com/enoches/Qualis_2019_preliminar/issues">issues</a> e <code>pull requests</code>.</p>
 <p>Disclaimer: nessa versão da planilha (0.1.1) os dados foram pareados pelo ISSN. Várias revistas aparentemente tiveram seus ISSN alterados, então na próxima versão da planilha será preciso fazer também a junção pelos nomes das revistas, e assim tentar identificar os periódicos que faltam.</p>
 <div id="software-utilizado" class="section level3">
 <h3>Software utilizado</h3>
@@ -388,26 +388,43 @@ summary {
 <h2>1. Pastas e arquivos</h2>
 <ul>
 <li>O arquivo <code>README.md</code> com informações gerais (este arquivo).</li>
-<li>Arquivo Qualis Economia 2019 - <code>qualis_economia_2019.xlsx</code></li>
-<li>Dados Originais e Metadados - <code>dados-originais</code>
+<li><p>Qualis Economia 2019 - <code>qualis_economia_2019.xlsx</code></p></li>
+<li>Dados Originais e Metadados/ - <code>dados-originais</code>
 <ul>
-<li>Metadados - <code>metadados</code>
+<li><code>classificacoes_publicadas_economia_2017_1496941693861.xls</code></li>
+<li><code>Qualis novos 1907.pdf</code></li>
+<li>Metadados/ - <code>metadados</code>
 <ul>
 <li>Guia de Metadados - <code>guia de metadados.md</code></li>
-<li>Suplementos - <code>suplementos</code></li>
+<li>Suplementos/ - <code>suplementos</code></li>
 </ul></li>
 </ul></li>
-<li>Processamento e Análise - <code>processamento-e-analise</code>
+<li>Processamento e Análise/ - <code>processamento-e-analise</code>
 <ul>
-<li>Dados a importar - <code>dados-a-importar</code></li>
-<li>Arquivos com comandos - <code>arquivos-com-comandos</code></li>
-<li>Dados da Análise - <code>dados-da-analise</code></li>
+<li>Dados a importar/ - <code>dados-a-importar</code>
+<ul>
+<li><code>Qualis-novos-1907_drv.txt</code></li>
+</ul></li>
+<li>Arquivos com comandos/ - <code>arquivos-com-comandos</code>
+<ul>
+<li><code>01-montar-base-novo-qualis.R</code></li>
+<li><code>02-lista-qualis-2016-economia.R</code></li>
+<li><code>03-processa-novo-qualis-economia.R</code></li>
+<li><code>04-gera-arquivo-qualis-economia-219.R</code></li>
+</ul></li>
+<li>Dados da Análise/ - <code>dados-da-analise</code>
+<ul>
+<li><code>data.appendix.Rmd</code></li>
+<li><code>novo_qualis_preliminar.rds</code></li>
+<li><code>qualis_economia_2016.rds</code></li>
+<li><code>qualis_economia_2019.rds</code></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 <div id="modificacoes-nos-arquivos-para-importacao" class="section level2">
 <h2>2. Modificações nos arquivos para importação</h2>
-<p>O arquivo <code>Qualis-novos-1907_drv.txt</code> está na pasta <code>dados-a-importar/</code> e foi derivado do arquivo original <code>Qualis novos 1907.pdf</code> e que contém a novo Qualis 2019. Abri o arquivo original, em pdf, em um leitor de pdf e utilizei a opção “Salvar Como” txt (texto puro). O arquivo resultante se apresenta da seguinte forma: </p>
+<p>O arquivo <code>Qualis-novos-1907_drv.txt</code> está na pasta <code>dados-a-importar/</code> e foi derivado do arquivo original <code>Qualis novos 1907.pdf</code>. É o arquivo que contém a novo Qualis 2019, provavelmente se trata do Qualis-Referência, segundo a nova metododologia da CAPES. Abri o arquivo original, em pdf, em um leitor de pdf e utilizei a opção “Salvar Como” txt (texto puro). O arquivo resultante se apresenta da seguinte forma:</p>
 <pre><code>----------------------- Page 1-----------------------
 
    ISSN                                     TITULO                                   ESTRATO 
@@ -421,7 +438,7 @@ summary {
 </div>
 <div id="instrucoes-para-replicacao" class="section level2">
 <h2>3. Instruções para replicação</h2>
-<p>Basta rodar os scripts da pasta <code>processamento-e-analise/arquivos-com-comandos/</code></p>
+<p>Supondo que tenha instalado o R, basta rodar os quatro scripts da pasta <code>processamento-e-analise/arquivos-com-comandos/</code> na ordem em que aparecem.</p>
 <p>Lorem ipsum lorem ipsum…</p>
 <p>.</p>
 </div>
