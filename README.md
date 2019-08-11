@@ -5,7 +5,7 @@
 Disponibilizo uma **tabela em Excel com periódicos da área de economia** e as respectivas classificações Qualis 2016 e o provável **novo Qualis 2019**. 
 A planilha foi criada a partir de [um arquivo pdf que circulou pelas redes sociais](https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis) em meados de julho de 2019. 
 
-Este repositório traz as informações e procedimentos para recriar a planilha *Qualis Economia 2019*. 
+Este repositório (atalho: http://bit.ly/novoqualis) traz as informações e procedimentos para recriar a planilha *Qualis Economia 2019*. 
 Com vistas à reprodutibilidade, o trabalho procurou seguir as recomendações do [Project TIER](https://www.projecttier.org/) e mais especificamente o [TIER Documentation Protocol v3.0 for R](https://github.com/ProjectTIER/ProjectTIER_R). 
 
 O projeto foi iniciado por [Enoch Filho](http://www.enochfilho.net/) como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do `R`, o `Git`, o `GitHub`, o `TIER Protocol`. 
@@ -53,9 +53,9 @@ O software utilizado foi o R versão 3.6.0 e o RStudio 1.2.1335
         - `04-gera-arquivo-qualis-economia-219.R`
     + Dados da Análise/ - `dados-da-analise`
         - `data.appendix.Rmd`
-        - novo_qualis_preliminar.rds
-        - qualis_economia_2016.rds
-        - qualis_economia_2019.rds
+        - `novo_qualis_preliminar.rds`
+        - `qualis_economia_2016.rds`
+        - `qualis_economia_2019.rds`
 
 
 
