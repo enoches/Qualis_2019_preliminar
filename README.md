@@ -2,19 +2,19 @@
 
 
 
-Disponibilizo uma **tabela em Excel com periódicos da área de economia** e as respectivas classificações Qualis 2016 e o provável **novo Qualis 2019**. 
-A planilha foi criada a partir de [um arquivo pdf que circulou pelas redes sociais](https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis) em meados de julho de 2019. 
+Disponibilizo uma **tabela em *Excel* dos periódicos da área de Economia** com as respectivas classificações Qualis 2016 e o provável **novo Qualis 2019**. 
+A planilha foi criada a partir de [um arquivo pdf de 400+ páginas que circulou pelas redes sociais](https://capes.gov.br/36-noticias/9735-nota-sobre-o-qualis) em meados de julho de 2019. 
 
 Este repositório (atalho: http://bit.ly/novoqualis) traz as informações e procedimentos para recriar a planilha *Qualis Economia 2019*. 
-Com vistas à reprodutibilidade, o trabalho procurou seguir as recomendações do [Project TIER](https://www.projecttier.org/) e mais especificamente o [TIER Documentation Protocol v3.0 for R](https://github.com/ProjectTIER/ProjectTIER_R). 
+Com vistas à reprodutibilidade, o fluxo de trabalho procurou seguir as recomendações do [*Project TIER*](https://www.projecttier.org/) e mais especificamente o [TIER Documentation Protocol v3.0 for R](https://github.com/ProjectTIER/ProjectTIER_R). 
 
-O projeto foi iniciado por [Enoch Filho](http://www.enochfilho.net/) como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do `R`, o `Git`, o `GitHub`, o `TIER Protocol`. 
+O projeto foi iniciado por [Enoch Filho](http://www.enochfilho.net/) como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do `R`, do `Git`, do `GitHub`, do *`TIER Protocol`*. 
 O status é *work-in-progress*. 
 Uma versão da planilha já está disponível. 
 Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. 
 A comunidade é bem-vinda para revisar e aperfeiçoar o código (por meio de [issues](https://github.com/enoches/Qualis_2019_preliminar/issues) e `pull requests` ) e livre para reutilizar o material. 
 
-O arquivo no formato `.xlsx` pode ser baixado diretamente neste link: 
+O arquivo no formato *`.xlsx`* pode ser baixado diretamente neste link: 
 
 - [**qualis_economia_2019.xlsx**](https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_economia_2019.xlsx) 
     - Versão: 0.1.1
