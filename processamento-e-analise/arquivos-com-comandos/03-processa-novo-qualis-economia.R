@@ -1,4 +1,4 @@
-# Este script utiliza o joins para encontrar o novo qualis (2019) 
+# Este script utiliza o joins para encontrar o novo qualis (2019)
 # das revistas da área de economia
 
 
@@ -10,19 +10,33 @@ library(dplyr)
 
 # Importar os dados ----
 
-novo_qualis_preliminar <- readr::read_rds(path = here("processamento-e-analise", "dados-da-analise", "novo_qualis_preliminar.rds"))
+novo_qualis_preliminar <-
+  read_rds(
+    path = here::here(
+      "processamento-e-analise",
+      "dados-da-analise",
+      "novo_qualis_preliminar.rds"
+    )
+  )
 
-qualis_economia_2016 <- readr::read_rds(here("processamento-e-analise", "dados-da-analise", "qualis_economia_2016.rds"))
+qualis_economia_2016 <-
+  read_rds(
+    here::here(
+      "processamento-e-analise",
+      "dados-da-analise",
+      "qualis_economia_2016.rds"
+    )
+  )
 
 
 # novo qualis economia ----
 
 # Peguei a lista de revistas da área de economia da última avaliação disponível (2013-2016) e relacionei com a nova lista geral que saiu em meados de julho (2019), utilizando o ISSN como identificador.
 
-# Essa tabela derivada não inclui os períódicos que provavelmente foram (serão?) incluídos na avaliação de 2019 não configuravam na lista de 2016, ou que mudaram o ISSN, entre outros problemas 
+# Essa tabela derivada não inclui os períódicos que provavelmente foram (serão?) incluídos na avaliação de 2019 não configuravam na lista de 2016, ou que mudaram o ISSN, entre outros problemas
 
 
-#TODO:
+# TODO:
 
 # [x] Parear o a lista de 2016 (`qualis_economia_2016`) e parear com a lsta de 2019 (`novo_qualis_preliminar`) usando o ISSN como chave: dplyr::left_join
 
@@ -31,43 +45,59 @@ qualis_economia_2016 <- readr::read_rds(here("processamento-e-analise", "dados-d
 
 # Joins ----
 
-qualis_economia_2019 <- qualis_economia_2016 %>% 
-  left_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>% 
-  select(ISSN_2016, TITULO_2016, TITULO_2019, ESTRATO_2016, ESTRATO_2019) %>% 
+qualis_economia_2019 <- qualis_economia_2016 %>%
+  left_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>%
+  select(ISSN_2016, TITULO_2016, TITULO_2019, ESTRATO_2016, ESTRATO_2019) %>%
   arrange(ESTRATO_2019)
 
 
 
-# qualis_economia_2016 %>% 
-#   inner_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>% 
+qualis_economia_2019b <- 
+qualis_economia_2016 %>%
+  left_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>%
+  #select(ISSN_2016, TITULO_2016, TITULO_2019, ESTRATO_2016, ESTRATO_2019) %>%
+  arrange(desc(ESTRATO_2019))
+
+#TODO trabalhar aqui incluindo um mutate com uma variável auxiliar indicando a origem da observação (qualis2016 ou qualis2019)
+
+qualis_economia_2019c <- 
+  novo_qualis_preliminar %>%
+  left_join(qualis_economia_2016, by = c("TITULO_2019" = "TITULO_2016")) %>%
+  left_join(qualis_economia_2016, by = c("ISSN_2019" = "ISSN_2016")) #%>%
+  arrange(desc(ESTRATO_2016))
+
+
+
+# qualis_economia_2016 %>%
+#   inner_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>%
 #   View("inner-ISSN-01")
-# 
-# qualis_economia_2016 %>% 
-#   left_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>% 
+#
+# qualis_economia_2016 %>%
+#   left_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>%
 #   View("left-TIT-01")
-# 
-# qualis_economia_2016 %>% 
-#   inner_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>% 
+#
+# qualis_economia_2016 %>%
+#   inner_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>%
 #   View("inner-TIT-01")
-# 
-# qualis_economia_2016 %>% 
-#   inner_join(novo_qualis_preliminar, 
+#
+# qualis_economia_2016 %>%
+#   inner_join(novo_qualis_preliminar,
 #              by = c("ISSN_2016" = "ISSN_2019") & c("TITULO_2016" = "TITULO_2019")
-#              ) %>% 
+#              ) %>%
 #   View("teste")
-# 
-# # An anti join will return all of the rows from the first table where there are not matching values from the second. 
-# 
-# qualis_economia_2016 %>% 
-#   anti_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>% 
+#
+# # An anti join will return all of the rows from the first table where there are not matching values from the second.
+#
+# qualis_economia_2016 %>%
+#   anti_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>%
 #   View("anti-ISSN-01")
-# 
-# qualis_economia_2016 %>% 
-#   anti_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>% 
+#
+# qualis_economia_2016 %>%
+#   anti_join(novo_qualis_preliminar, by = c("TITULO_2016" = "TITULO_2019")) %>%
 #   View("anti-TIT-01")
-# 
-# 
-# dplyr::distinct() 
+#
+#
+# dplyr::distinct()
 # janitor::get_dupes()
 # stringr::str_detect()
 
