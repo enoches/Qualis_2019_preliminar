@@ -67,7 +67,27 @@ qualis_economia_2019c <-
   arrange(desc(ESTRATO_2016))
 
 
+# Fazer um grande left_join ----
+  
+#qualis_economia_2019c <-
+    novo_qualis_preliminar %>%
+    left_join(qualis_economia_2016, by = c("TITULO_2019" = "TITULO_2016")) %>%
+    left_join(qualis_economia_2016, by = c("ISSN_2019" = "ISSN_2016")) %>% 
+    filter(ano_ref == 2016) %>% 
+    View()
+    #arrange(desc(ESTRATO_2016)
+  
 
+#qualis_economia_2019c <-
+  novo_qualis_preliminar %>%
+    full_join(qualis_economia_2016, by = c("TITULO_2019" = "TITULO_2016")) %>%
+    full_join(qualis_economia_2016, by = c("ISSN_2019" = "ISSN_2016")) %>% 
+    filter(ano_ref == 2016) %>% 
+    View()
+    #arrange(desc(ESTRATO_2016)
+  
+  
+  
 # qualis_economia_2016 %>%
 #   inner_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>%
 #   View("inner-ISSN-01")
