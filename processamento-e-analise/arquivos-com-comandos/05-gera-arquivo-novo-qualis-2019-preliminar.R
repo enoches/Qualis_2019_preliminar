@@ -34,11 +34,16 @@ novo_qualis_preliminar <- read_rds(here::here(
   "novo_qualis_preliminar.rds"
 ))
 
+# Retira a variável auxiliar:
+
+aux_novo_qualis <- 
+novo_qualis_preliminar %>% select(-ano_ref)
+
 # E monta o arquivo ----
 
-write_xlsx(list(README, novo_qualis_preliminar),
-  path = here::here("qualis_geral_2019.xlsx"),
+write_xlsx(list(README, aux_novo_qualis),
+  path = here::here("qualis_geral_2019.xlsx")
 )
 
 # Remove do ambiente os objetos utilizados
-rm(README, novo_qualis_preliminar) 
+rm(README, novo_qualis_preliminar, aux_novo_qualis) 
