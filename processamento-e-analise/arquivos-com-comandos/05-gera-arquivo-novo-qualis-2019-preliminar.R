@@ -16,7 +16,7 @@ README <- data.frame(
     "Versão em arquivo de planilha Excel daquele pdf de 400+ páginas.",
     "Os dados estão na outra aba!",
     "",
-    "A planilha tem três colunas (ISSN_2019, TITULO, 2019	ESTRATO_2019)",
+    "A planilha tem três colunas (ISSN_2019, TITULO_2019,	ESTRATO_2019)",
     "e 22.047 linhas, incluindo o cabeçalho.",
     "",
     "- Versão: 1.0.0",

@@ -11,9 +11,15 @@ library(tidyverse)
 
 # Importar os dados ----
 
-novo_qualis_preliminar <- readr::read_rds(path = here("processamento-e-analise", "dados-da-analise", "novo_qualis_preliminar.rds"))
+novo_qualis_preliminar <- 
+  readr::read_rds(path = here::here("processamento-e-analise", 
+                                    "dados-da-analise", 
+                                    "novo_qualis_preliminar.rds"))
 
-qualis_economia_2016 <- readr::read_rds(here("processamento-e-analise", "dados-da-analise", "qualis_economia_2016.rds"))
+qualis_economia_2016 <- 
+  readr::read_rds(here::here("processamento-e-analise", 
+                             "dados-da-analise", 
+                             "qualis_economia_2016.rds"))
 
 
 # novo qualis economia ----
@@ -34,9 +40,10 @@ qualis_economia_2016 <- readr::read_rds(here("processamento-e-analise", "dados-d
 
 qualis_economia_2019 <- qualis_economia_2016 %>% 
   left_join(novo_qualis_preliminar, by = c("ISSN_2016" = "ISSN_2019")) %>% 
-  select(ISSN_2016, TITULO_2016, TITULO_2019, ESTRATO_2016, ESTRATO_2019) %>% 
+  #select(ISSN_2016, TITULO_2016, TITULO_2019, ESTRATO_2016, ESTRATO_2019) %>% #TODO retirar dempois
   arrange(ESTRATO_2019)
 
+## Experimentações: ----
 
 
 qualis_economia_2019b <- 
@@ -119,7 +126,7 @@ qualis_economia_2019c <-
 # Salva em `dados-da-analise/`: ----
 readr::write_rds(
   qualis_economia_2019,
-  path = here(
+  path = here::here(
     "processamento-e-analise",
     "dados-da-analise",
     "qualis_economia_2019.rds"

@@ -1,9 +1,9 @@
 # Este script monta a tabela com os dados preliminares do novo Qualis 2019
-# a partit do pdf de 441 páginas que circulou na internet e salva num arquivo
+# a partir do pdf de 441 páginas que circulou na internet e salva num arquivo
 # `novo_qualis_preliminar.rds`
-# O pdf foi salvo com o txt derivado lido no R. 
+# O pdf foi salvo como arquivo txt derivado do original e lido no R. 
 
-# pacotes ----
+# pacotes utilizados ----
 
 library(here)
 library(readr)
@@ -96,6 +96,6 @@ novo_qualis_preliminar <-
 # Salva em `dados-da-analise/` ----
 
 readr::write_rds(novo_qualis_preliminar, 
-                 path = here("processamento-e-analise", 
+                 path = here::here("processamento-e-analise", 
                              "dados-da-analise", 
                              "novo_qualis_preliminar.rds")) 

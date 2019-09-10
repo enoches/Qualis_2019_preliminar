@@ -12,7 +12,7 @@ library(dplyr)
 # Importa dados ----
 
 qualis_economia_2016 <- read_tsv(
-  file = here(
+  file = here::here(
     "dados-originais",
     "classificacoes_publicadas_economia_2017_1496941693861.xls"
   ),
@@ -44,7 +44,7 @@ qualis_economia_2016 <-
 # Salva em `dados-da-analise/`: ----
 readr::write_rds(
   qualis_economia_2016,
-  path = here(
+  path = here::here(
     "processamento-e-analise",
     "dados-da-analise",
     "qualis_economia_2016.rds"
