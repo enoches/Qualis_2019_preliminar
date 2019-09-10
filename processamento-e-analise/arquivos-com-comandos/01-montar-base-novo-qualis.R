@@ -86,6 +86,12 @@ novo_qualis_preliminar <- novo_qualis_preliminar %>%
   mutate(ESTRATO_2019 = forcats::as_factor(ESTRATO_2019)) %>% 
   arrange(TITULO_2019)
 
+# Inclui variável ano de referência. Isso vai facilitar as coisas na hora da 
+# construção da planilha
+
+novo_qualis_preliminar <- 
+  novo_qualis_preliminar %>% mutate(ano_ref = as_factor(2019) )
+  
 
 # Salva em `dados-da-analise/` ----
 

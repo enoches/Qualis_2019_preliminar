@@ -32,6 +32,15 @@ qualis_economia_2016 <- qualis_economia_2016 %>%
   mutate(ESTRATO_2016 = forcats::as_factor(ESTRATO_2016)) %>% 
   arrange(TITULO_2016)
 
+# # Inclui variável ano de referência. Isso vai facilitar as coisas na hora da 
+# construção da planilha
+
+qualis_economia_2016 <- 
+  qualis_economia_2016 %>% mutate(ano_ref = as_factor(2016) )
+
+
+
+
 # Salva em `dados-da-analise/`: ----
 readr::write_rds(
   qualis_economia_2016,
