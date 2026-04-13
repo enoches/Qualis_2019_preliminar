@@ -7,15 +7,6 @@ As planilhas foram criadas a partir de [um arquivo pdf de 400+ páginas que circ
 
 ![](fig-01-explicacao.jpg)
 
-Este repositório (atalho: http://bit.ly/novoqualis) traz as informações e procedimentos para recriar as planilhas *Qualis Economia 2019* e *Qualis Geral 2019*. 
-Com vistas à reprodutibilidade, o fluxo de trabalho procurou seguir as recomendações do [*Project TIER*](https://www.projecttier.org/) e mais especificamente o [TIER Documentation Protocol v3.0 for R](https://github.com/ProjectTIER/ProjectTIER_R). 
-
-O projeto foi iniciado por [Enoch Filho](http://www.enochfilho.net/) como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do `R`, do `Git`, do `GitHub`, do *`TIER Protocol`*. 
-O status é *work-in-progress*. 
-Uma versão das planilhas já está disponível. 
-Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. 
-A comunidade é bem-vinda para revisar e aperfeiçoar o código (por meio de [issues](https://github.com/enoches/Qualis_2019_preliminar/issues) e `pull requests` ) e livre para reutilizar o material. 
-
 Os arquivos no formato *`.xlsx`* podem ser baixados diretamente nestes links: 
 
 - [**qualis_geral_2019.xlsx**](https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_geral_2019.xlsx) 
@@ -25,9 +16,18 @@ Os arquivos no formato *`.xlsx`* podem ser baixados diretamente nestes links:
 - [**qualis_economia_2019.xlsx**](https://github.com/enoches/Qualis_2019_preliminar/raw/master/qualis_economia_2019.xlsx) 
     - Versão: 0.1.1
     - Atualizada em (yyyy-mm-dd): 2019-08-10
-    
-Disclaimer: nessa versão da planilha (0.1.1) os dados foram pareados pelo ISSN. 
+    - Disclaimer: nessa versão da planilha (0.1.1) os dados foram pareados pelo ISSN. 
 Várias revistas aparentemente tiveram seus ISSN alterados, então na próxima versão da planilha será preciso fazer também a junção pelos nomes das revistas, e assim tentar identificar os periódicos que faltam.
+
+
+Este repositório (atalho: http://bit.ly/novoqualis) traz as informações e procedimentos para recriar as planilhas *Qualis Economia 2019* e *Qualis Geral 2019*. 
+Com vistas à reprodutibilidade, o fluxo de trabalho procurou seguir as recomendações do [*Project TIER*](https://www.projecttier.org/) e mais especificamente o [TIER Documentation Protocol v3.0 for R](https://github.com/ProjectTIER/ProjectTIER_R). 
+
+O projeto foi iniciado por [Enoch Filho](http://www.enochfilho.net/) como um exercício para praticar o manuseio, arrumação e transformação de dados com o uso do `R`, do `Git`, do `GitHub`, do *`TIER Protocol`*. 
+O status é *work-in-progress*. 
+Uma versão das planilhas já está disponível. 
+Não há garantias, mas é provável que haja melhorias, mudanças no código, documentação, etc. 
+A comunidade é bem-vinda para revisar e aperfeiçoar o código (por meio de [issues](https://github.com/enoches/Qualis_2019_preliminar/issues) e `pull requests` ) e livre para reutilizar o material. 
 
 
 
